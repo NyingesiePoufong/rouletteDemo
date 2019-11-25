@@ -1,0 +1,123 @@
+.hide{
+  display:inline-block;
+}
+
+html,body{
+  margin:2%;
+  background:#ddd;
+  text-align:center;
+}
+
+body{
+  background-image: url("https://cmsstorage.rationalcdn.com/assets/psc/assets/common/images/games/roulette/thumb.jpg");
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#colorPick{
+background-color: black;
+color:red;
+border: 2px solid red;
+border-radius: 4px;
+width: 150px;
+height: 30px;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-weight: bold;
+font-size: 15px;
+}
+
+#bet{
+background-color: black;
+color:red;
+border: 2px solid red;
+border-radius: 4px;
+width: 150px;
+height: 30px;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-weight: bold;
+font-size: 15px;
+}
+
+#play{
+background-color: black;
+color:red;
+border: 2px solid red;
+border-radius: 4px;
+width: 150px;
+height: 35px;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-weight: bold;
+font-size: 15px;
+}
+
+#owner{
+background-color: black;
+color:red;
+border: 2px solid red;
+border-radius: 4px;
+width: 150px;
+height: 35px;
+text-align: center;
+font-family: 'Bebas Neue', cursive;
+font-weight: bold;
+font-size: 15px;
+}
+
+
+h2{
+  color:#555;
+  text-shadow:2px 2px 3px white;
+}
+
+.pokerchip{
+  margin:.5em;
+  font-size:1.2em;
+  position:relative;
+  display:inline-block;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  width:5em;
+  height:5em;
+  background:#555;
+  border-radius:50%;
+  position:relative;
+  border:.5em dashed white;
+  transition:all .5s ease;
+  backface-visibility:hidden;
+}
+
+.pokerchip.red{
+  background:#DD4631;
+}
+
+
+
+
+.pokerchip.flat{
+  box-shadow:0 0 0 .2em #fff;
+}
+
+.pokerchip.iso{
+  transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg);
+  box-shadow:
+    -1px 1px 0px #555,
+    -2px 2px 0px #555,
+    -3px 3px 0px #555,
+    -4px 4px 0px #555,
+    -5px 5px 0px #555,
+    -6px 6px 10px #555;
+}
+
+.pokerchip.flat:hover{
+  transform:rotate(90deg);
+}
+
+.pokerchip.iso:hover{
+  transform: perspective(3000px) rotateX(55deg) rotateZ(-40deg) translateZ(.5em);
+}
